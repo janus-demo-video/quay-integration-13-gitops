@@ -30,17 +30,3 @@ spec:
   workspaces:
     - name: docker-config
       mountPath: /tekton/home/.docker
-  volumes:
-    - name: varlibcontainers
-      emptyDir: {}
-    - name: run
-      emptyDir: {}
-    - name: tmp
-      emptyDir: {}
-  volumeMounts:
-    - name: varlibcontainers
-      mountPath: /var/lib/containers
-    - name: run
-      mountPath: /run
-    - name: tmp
-      mountPath: /tmp
