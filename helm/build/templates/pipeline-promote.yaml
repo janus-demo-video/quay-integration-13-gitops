@@ -75,6 +75,6 @@ spec:
       workspaces:
         - name: images-url
           workspace: images-url
+{{- end }}
   workspaces:
     - name: images-url
-{{- end }}
