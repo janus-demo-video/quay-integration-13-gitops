@@ -35,3 +35,6 @@ spec:
         workspaces:
           - name: images-url
             emptyDir: {}
+          - name: quay-creds
+            secret:
+              secretName: quay-creds
