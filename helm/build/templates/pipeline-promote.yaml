@@ -40,6 +40,8 @@ spec:
       workspaces:
         - name: images-url
           workspace: images-url
+        - name: quay-creds
+          workspace: quay-creds
 {{- else }}
     - name: copy-image-tag
       params:
@@ -78,3 +80,4 @@ spec:
 {{- end }}
   workspaces:
     - name: images-url
+    - name: quay-creds
